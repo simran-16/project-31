@@ -45,10 +45,10 @@ function setup() {
 
   //create particle objects
   
-  if (frameCount%90===0){
+   for( var i= 0; i<=1000; i=i+90){
    particles.push(new Particle(random (width/2-10 , width/2+10), 10, 10));
   }
-
+  
   
     
 }
@@ -63,8 +63,8 @@ function draw() {
   ground.display();
   
   //display the plinkos 
-  for (var i = 0; i < plinkos.length; i++) {
-    plinkos[i].display();   
+  for (var j = 0; j < plinkos.length; j++) {
+    plinkos[j].display();   
   }
    
   //display the divisions
@@ -73,7 +73,7 @@ function draw() {
   }
 
   //display the paricles 
-  for (var i = 0; i <particles.length; i++){
-    particles[i].display();
+  for (var n = 0; n <particles.length; n++){
+    particles[n].display();
   }
 }
